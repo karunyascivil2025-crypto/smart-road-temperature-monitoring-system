@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Road Temperature Monitoring System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🌡️ Smart Road Temperature Monitoring System</h1>
+        <p>Real-Time Road Surface Temperature Monitoring</p>
+    </header>
+
+    <nav>
+        <a href="#dashboard">Dashboard</a>
+        <a href="#history">Temperature History</a>
+        <a href="#alerts">Alerts</a>
+        <a href="#about">About</a>
+    </nav>
+
+    <section id="dashboard" class="container">
+        <h2>📊 Dashboard</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Current Temperature</h3>
+                <p class="temperature">32°C</p>
+            </div>
+
+            <div class="card">
+                <h3>Road Status</h3>
+                <p class="safe">SAFE</p>
+            </div>
+
+            <div class="card">
+                <h3>System Status</h3>
+                <p class="online">ONLINE</p>
+            </div>
+
+            <div class="card">
+                <h3>🕒 Last Updated</h3>
+                <p id="lastUpdated">--:--:--</p>
+            </div>
+
+            <div class="card">
+                <h3>📉 Minimum Temperature</h3>
+                <p id="minTemp">--°C</p>
+            </div>
+
+            <div class="card">
+                <h3>📈 Maximum Temperature</h3>
+                <p id="maxTemp">--°C</p>
+            </div>
+
+            <div class="card">
+                <h3>📍 Road Location</h3>
+                <p id="roadLocation">Test Road</p>
+            </div>
+
+            <div class="card">
+                <h3>🔌 Sensor Status</h3>
+                <p id="sensorStatus" class="online">CONNECTED</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="history" class="container">
+        <h2>📈 Temperature History</h2>
+
+        <div class="chart">
+            <div class="bar" style="height: 40%;">28°C</div>
+            <div class="bar" style="height: 55%;">30°C</div>
+            <div class="bar" style="height: 70%;">32°C</div>
+            <div class="bar" style="height: 85%;">35°C</div>
+            <div class="bar" style="height: 65%;">31°C</div>
+        </div>
+    </section>
+
+    <section id="alerts" class="container">
+        <h2>🚨 Temperature Alerts</h2>
+
+        <div class="alert">
+            No critical temperature alerts at present.
+        </div>
+    </section>
+
+    <section id="about" class="container">
+        <h2>ℹ️ About the Project</h2>
+
+        <p>
+            The Smart Road Temperature Monitoring System monitors
+            road surface temperature using a temperature sensor and ESP32.
+            The collected data can be displayed on an LCD and website
+            dashboard to identify high-temperature conditions.
+        </p>
+    </section>
+
+    <footer>
+        <p>Smart Road Temperature Monitoring System | Mini Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
